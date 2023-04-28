@@ -28,3 +28,9 @@ The objective of "Exploring the Core SQL Syntax for Analyzing Celo Blockchain Tr
 # SAMPLE DATA SOURCE
 
 *  This is the link to the [Data Source](https://celoscan.io/exportData?type=internaltxns&a=0x3d90ec3c3272b66ee2b0170c249bfaa3ee59cc94) 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ ## EXPLAINING THE USE OF SQL IN WEB3
+ 
+ 
