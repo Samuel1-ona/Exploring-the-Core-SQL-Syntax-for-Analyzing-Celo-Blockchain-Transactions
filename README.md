@@ -56,7 +56,110 @@ Overall, using SQL in Celo blockchain can help developers and analysts more effi
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+# TUTORIAL 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## CREATING A DATABASE 
+
+Once you have executed this SQL command, a new database with the name celo_blockchain will be created in your SQL server. Note that you will need appropriate permissions and access to the SQL server in order to create a new database.
+
+```
+CREATE DATABASE celo_blockchain;
+
+```
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## IMPORTING THE FLAT FILES ( CSV ) INTO SQL SERVER 
+
+1.```file_path``` is the path to the CSV file that you want to import.
+
+2.```Celo_transactions``` is the name of the table where you want to import the data.
+
+3.```FIELDS TERMINATED BY ','``` specifies that the fields in the CSV file are separated by commas.
+
+4.```ENCLOSED BY '"'``` specifies that fields are enclosed by double quotes.
+
+5.```LINES TERMINATED BY '\n'``` specifies that each row is terminated by a new line character.
+
+6.```IGNORE 1 ROWS``` tells the SQL engine to ignore the first row in the CSV file, which is usually a header row.
+
+Here is an example of how you might use this syntax to import data from a CSV file named my_data.csv into a table named my_table:
+
+```
+LOAD DATA INFILE '/path/to/my_celo.csv'
+INTO TABLE celo_name
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+```
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## CALLING THE TABLE FROM THE DATABASE 
+
+```SELECT * FROM celo_name;```
+
+In this syntax,```Celo_transactions``` is the name of the table you want to select data from. The ```*``` symbol specifies that you want to select all columns from the table
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## HOW TO USE ALL AGGREGATE FUNCTIONS AND DATE FUNCTIONS WILL BE COVERED IN THE TUTORIAL.
+
+* The aggregate functions will be our first focus.
+
+Aggregate functions in SQL are functions that perform a calculation on a set of values and return a single value. 
 
 
+* ```COUNT()```: returns the number of rows that match a specified condition.
+* ```SUM()```: returns the sum of all values in a specified column.
+* ```AVG()```: returns the average of all values in a specified column.
+* ```MIN()```: returns the smallest value in a specified column.
+* ```MAX()```: returns the largest value in a specified column.
 
+* ## To find the total transactions
 
+``` 
+SELECT SUM(txns)
+AS "Total_Transactions"
+FROM Celo_transactions;
+```
+
+* ## To find the average block time 
+
+```
+SELECT AVG(age)
+AS " Avg_block_time"
+FROM Celo_transactions;
+
+```
+
+* ## To find the average gas fee 
+
+```
+SELECT AVG(gas_fee)
+AS " Avg_gas_fee"
+FROM Celo_transactions;
+
+```
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Time functions used in QUERYING CELO BLOCKCHAIN
+
+* Time functions in SQL are used to work with temporal data, such as dates and times. These functions provide a way to extract or manipulate specific parts of a date or time value, perform calculations on dates and times, and format date and time values for display.
+
+```NOW()```: returns the current date and time.
+```DATE()```: extracts the date part of a date/time value.
+```TIME()```: extracts the time part of a date/time value.
+```YEAR(),``` MONTH(), DAY(): extract the year, month, or day from a date value.
+```HOUR(),``` MINUTE(), SECOND(): extract the hour, minute, or second from a time value.
+```DATEDIFF()```: calculates the difference between two dates or times.
+
+* ## To find the days of  Carbon Nagative Celo blockchain .
+
+* Assuming you have a table named Celo_transactions with columns ***id***, ***date***, and ***carbon_negative***, where date stores the transaction date and carbon_negative stores a boolean value indicating whether the transaction is carbon negative, you can use the following SQL query to calculate the number of days between the current date and the transaction date, and include the carbon_negative column:
+
+```
+SELECT id, DATEDIFF(NOW(), date)
+AS Days_carbon_negative,
+carbon_negative
+FROM Celo_transactions;
+```
