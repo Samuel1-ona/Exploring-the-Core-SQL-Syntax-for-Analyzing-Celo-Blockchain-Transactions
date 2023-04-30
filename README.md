@@ -9,6 +9,12 @@ The Celo blockchain is a decentralized platform that enables fast, secure, and l
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # TABLE CONTENT
 * [Exploring the Core SQL Syntax for Analyzing Celo Blockchain Transactions]()
+  _ [INTRODUCTION] ()
+  _ [TABLE CONTENT] ()
+  _ [OBJECTIVES] ()
+  _ [PREREQUISITES] ()
+  _ [ REQUIREMENTS ] ()
+  _ [SAMPLE DATA SOURCE] ()
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # OBJECTIVES
