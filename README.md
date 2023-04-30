@@ -1,11 +1,16 @@
 # Exploring the Core SQL Syntax for Analyzing Celo Blockchain Transactions
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # INTRODUCTION
 
 The Celo blockchain is a decentralized platform that enables fast, secure, and low-cost payments and financial transactions using a native cryptocurrency called CELO. As with any blockchain, the Celo network generates a vast amount of data that can provide valuable insights into its operations, user behavior, and overall health. SQL is a powerful language that can be used to manage and analyze large datasets, making it an essential tool for those interested in exploring the Celo blockchain's transaction data. This topic, "Exploring the Core SQL Syntax for Analyzing Celo Blockchain Transactions," will provide an overview of the fundamental SQL syntax necessary for analyzing Celo blockchain transactions. It will cover basic SQL queries such as SELECT, WHERE, and GROUP BY, as well as more advanced functions like JOIN and subqueries. The insights gained from SQL analysis can be used to inform Celo blockchain development, improve user experience, and drive adoption.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# TABLE CONTENT
+* [Exploring the Core SQL Syntax for Analyzing Celo Blockchain Transactions]
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # OBJECTIVES
 
 The objective of "Exploring the Core SQL Syntax for Analyzing Celo Blockchain Transactions" is to provide a comprehensive understanding of SQL syntax necessary for analyzing Celo blockchain transactions. The topic aims to introduce the basics of SQL queries such as SELECT, WHERE, and GROUP BY, and to explore more advanced functions such as JOIN and subqueries. Through this exploration of SQL syntax, readers will gain the necessary skills to query and analyze Celo blockchain data effectively. The ultimate objective is to empower readers to use SQL as a tool for gaining valuable insights into the Celo blockchain's operations, user behavior, and overall health, leading to improvements in development, user experience, and adoption of the network.
@@ -163,3 +168,10 @@ AS Days_carbon_negative,
 carbon_negative
 FROM Celo_transactions;
 ```
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## CONCLUSION
+
+In conclusion, SQL is a powerful tool for analyzing Celo blockchain transactions. With the vast amount of transaction data generated on the blockchain, SQL provides a flexible and efficient way to extract and manipulate the data. By understanding the core syntax of SQL and its functions, users can query the blockchain database to extract meaningful insights, such as transaction volume, block time, gas prices, and carbon footprint. These insights can help to inform decisions related to blockchain development, adoption, and sustainability. As the Celo blockchain continues to grow and evolve, the ability to analyze and make sense of the transaction data becomes increasingly important. By mastering the core SQL syntax for analyzing Celo blockchain transactions, users can stay ahead of the curve and unlock the full potential of the blockchain.
+
+
+
