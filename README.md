@@ -20,6 +20,15 @@ The Celo blockchain is a decentralized platform that enables fast, secure, and l
    - [EXPLAINING THE USE OF SQL IN WEB3](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#explaining-the-use-of-sql-in-web3)
       - [BENEFIT OF USING SQL IN CELO BLOCKCHAIN ](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#benefit-of-using-sql-in-celo-blockchain)
 
+* [TUTORIAL](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#tutorial)
+
+     - [CREATING A DATABASE](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#creating-a-database)
+       - [IMPORTING THE FLAT FILES ( CSV ) INTO SQL SERVER ](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#importing-the-flat-files--csv--into-sql-server)
+       - [CALLING THE TABLE FROM THE DATABASE ](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#calling-the-table-from-the-database)
+       - [HOW TO USE ALL AGGREGATE FUNCTIONS](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#how-to-use-all-aggregate-functions-and-date-functions-will-be-covered-in-the-tutorial)
+       - [HOW TO USE TIME FUNCTIONS](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#time-functions-used-in-querying-celo-blockchain)
+
+* [CONCLUSION](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#conclusion)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # OBJECTIVES
 
@@ -116,7 +125,7 @@ IGNORE 1 ROWS;
 In this syntax,```Celo_transactions``` is the name of the table you want to select data from. The ```*``` symbol specifies that you want to select all columns from the table
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## HOW TO USE ALL AGGREGATE FUNCTIONS AND DATE FUNCTIONS WILL BE COVERED IN THE TUTORIAL.
+## HOW TO USE ALL AGGREGATE FUNCTIONS
 
 * The aggregate functions will be our first focus.
 
@@ -157,7 +166,7 @@ FROM Celo_transactions;
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Time functions used in QUERYING CELO BLOCKCHAIN
+## Time functions used in Querying Celo Blockchain
 
 * Time functions in SQL are used to work with temporal data, such as dates and times. These functions provide a way to extract or manipulate specific parts of a date or time value, perform calculations on dates and times, and format date and time values for display.
 
