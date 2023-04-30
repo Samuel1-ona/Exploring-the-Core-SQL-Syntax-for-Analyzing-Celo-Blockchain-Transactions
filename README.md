@@ -36,7 +36,21 @@ The objective of "Exploring the Core SQL Syntax for Analyzing Celo Blockchain Tr
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
 # PREREQUISITES
+
+Before diving into the core SQL syntax for analyzing Celo blockchain transactions, it is essential to have a fundamental understanding of SQL concepts and principles. Some basic SQL concepts include:
+
+- Database design and management
+- Tables, columns, and data types
+- Data manipulation using CRUD operations (CREATE, READ, UPDATE, DELETE)
+- Basic SQL queries such as `SELECT`, `FROM`, `WHERE`, and `GROUP BY`
+
+Familiarity with these concepts will make it easier to follow along with the tutorial and understand the SQL syntax used to analyze Celo blockchain transactions. Additionally, it is helpful to have a basic understanding of blockchain technology and the Celo blockchain specifically.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# GOALS
 
 * Understanding how to analyze CELO data with SQL.
 * Recognizing the fundamental operations utilized to create the CELO Data dashboard.
