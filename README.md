@@ -17,6 +17,8 @@ The Celo blockchain is a decentralized platform that enables fast, secure, and l
   - [REQUIREMENTS ](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#requirements)
   - [SAMPLE DATA SOURCE](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#sample-data-source)
   
+   - [EXPLAINING THE USE OF SQL IN WEB3](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#explaining-the-use-of-sql-in-web3)
+      - [BENEFIT OF USING SQL IN CELO BLOCKCHAIN ](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#benefit-of-using-sql-in-celo-blockchain)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # OBJECTIVES
