@@ -57,9 +57,23 @@ Familiarity with these concepts will make it easier to follow along with the tut
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# REQUIREMENTS 
+# REQUIREMENTS
 
-* SQL EDITOR:SQL editors are essential tools for anyone working with relational databases and SQL queries. They provide a user-friendly interface for writing and executing SQL code, making it easier to manage and analyze data stored in a database
+### To follow this tutorial, you should have a basic understanding of the Celo blockchain and its transactions. You should also have access to a SQL server, such as MySQL, PostgreSQL, or SQL Server, and have a basic understanding of SQL syntax.
+
+The following software and tools will be used in this tutorial:
+
+ - A SQL server, such as MySQL, PostgreSQL, or SQL Server
+ - A command-line interface or GUI for interacting with the SQL server
+ - A text editor or SQL client for writing and executing SQL queries
+ - Basic knowledge of SQL syntax
+
+Optional:
+
+- Basic knowledge of command line interface
+- Basic knowledge of Python/ any programming language
+
+### It is not necessary to have prior experience with analyzing blockchain data or SQL, as this tutorial will provide an introduction to both. However, it is recommended to have some prior experience with SQL syntax and databases.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
