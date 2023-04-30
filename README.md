@@ -1,12 +1,12 @@
 # Exploring Core SQL Syntax for Analyzing Celo Blockchain Transactions:
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Introduction:
 
 The Celo blockchain is a decentralized platform that enables fast, secure and low-cost payments and financial transactions using a native cryptocurrency called as CELO. As with any blockchain, the Celo network generates a vast amount of data that can provide valuable insights into its operations, user behavior and overall health. SQL is a powerful language that can be used to manage and analyze large datasets, making it an essential tool for those interested in exploring the Celo blockchain's transaction data. This tutorial will provide an overview of the fundamental SQL syntax necessary for analyzing Celo blockchain transactions. It will also cover basic SQL queries such as SELECT, WHERE, GROUP BY as well as more advanced functions like JOIN and subqueries. The insights gained from SQL analysis can be used to inform Celo blockchain development, improve user experience and drive adoption.
 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents:
 
 * [Exploring the Core SQL Syntax for Analyzing Celo Blockchain Transactions](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#exploring-the-core-sql-syntax-for-analyzing-celo-blockchain-transactions)
@@ -110,19 +110,19 @@ Here is an example of how you might use this syntax to import data from a CSV fi
 ```
 -- This code disables foreign key checks, loads data from a CSV file into the celo_name table, and re-enables foreign key checks.
 
-SET FOREIGN_KEY_CHECKS = 0; -- This line disables foreign key checks to speed up the loading process and avoid foreign key constraints errors.
+SET FOREIGN_KEY_CHECKS = 0;    -- This line disables foreign key checks to speed up the loading process and avoid foreign key constraints errors.
 
-LOAD DATA INFILE '/absolute/path/to/my_celo.csv' -- This loads the data from the specified CSV file into the celo_name table.
+LOAD DATA INFILE '/absolute/path/to/my_celo.csv'      -- This loads the data from the specified CSV file into the celo_name table.
 INTO TABLE celo_name
-CHARACTER SET utf8 -- This specifies the character set of the CSV file to be UTF-8.
-FIELDS TERMINATED BY ',' -- This specifies that the fields in the CSV file are separated by commas.
-ENCLOSED BY '"' -- This specifies that fields that contain commas are enclosed in double quotes.
-LINES TERMINATED BY '\n' -- This specifies that each line in the CSV file ends with a newline character.
-IGNORE 1 ROWS -- This specifies that the first row of the CSV file should be ignored as it usually contains the header.
+CHARACTER SET utf8        -- This specifies the character set of the CSV file to be UTF-8.
+FIELDS TERMINATED BY ','   -- This specifies that the fields in the CSV file are separated by commas.
+ENCLOSED BY '"'     -- This specifies that fields that contain commas are enclosed in double quotes.
+LINES TERMINATED BY '\n'   -- This specifies that each line in the CSV file ends with a newline character.
+IGNORE 1 ROWS        -- This specifies that the first row of the CSV file should be ignored as it usually contains the header.
 
-ERRORS; -- This line specifies that any errors encountered during the load process should be displayed as warnings and the loading process should continue.
+ERRORS;        -- This line specifies that any errors encountered during the load process should be displayed as warnings and the loading process should continue.
 
-SET FOREIGN_KEY_CHECKS = 1; -- This line re-enables foreign key checks after the loading process is complete.
+SET FOREIGN_KEY_CHECKS = 1;        -- This line re-enables foreign key checks after the loading process is complete.
 
 
 ```
@@ -152,7 +152,9 @@ Aggregate functions in SQL are functions that perform a calculation on a set of 
 ``` 
 -- This query calculates the total number of transactions stored in the Celo_transactions table.
 
+
 SELECT SUM(txns) AS "Total_Transactions" -- This calculates the sum of the txns column of all transactions and gives the result a column alias "Total_Transactions".
+
 FROM Celo_transactions; -- This specifies the Celo_transactions table as the source of data for the query.
 
 ```
@@ -163,6 +165,7 @@ FROM Celo_transactions; -- This specifies the Celo_transactions table as the sou
 -- This query calculates the average block time of all transactions stored in the Celo_transactions table.
 
 SELECT AVG(age) AS "Avg_block_time" -- This calculates the average block time of all transactions and gives the result a column alias "Avg_block_time".
+
 FROM Celo_transactions; -- This specifies the Celo_transactions table as the source of data for the query.
 
 ```
@@ -173,6 +176,7 @@ FROM Celo_transactions; -- This specifies the Celo_transactions table as the sou
 -- This query calculates the average gas fee of all transactions stored in the Celo_transactions table.
 
 SELECT AVG(gas_fee) AS "Avg_gas_fee" -- This calculates the average gas fee of all transactions and gives the result a column alias "Avg_gas_fee".
+
 FROM Celo_transactions; -- This specifies the Celo_transactions table as the source of data for the query.
 
 ```
@@ -200,6 +204,7 @@ FROM Celo_transactions; -- This specifies the Celo_transactions table as the sou
 
 SELECT id, 
        DATEDIFF(NOW(), date) AS Days_carbon_negative, -- This calculates the number of days between the transaction date and today's date.
+       
        carbon_negative -- This selects the carbon negative value from the Celo_transactions table.
 FROM Celo_transactions;
 
