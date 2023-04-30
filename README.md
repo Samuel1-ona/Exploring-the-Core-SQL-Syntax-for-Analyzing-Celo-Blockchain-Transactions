@@ -120,7 +120,7 @@ IGNORE 1 ROWS;
 
 ## CALLING THE TABLE FROM THE DATABASE 
 
-```SELECT * FROM celo_name;```
+```SELECT * FROM Celo_transactions;```
 
 In this syntax,```Celo_transactions``` is the name of the table you want to select data from. The ```*``` symbol specifies that you want to select all columns from the table
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
