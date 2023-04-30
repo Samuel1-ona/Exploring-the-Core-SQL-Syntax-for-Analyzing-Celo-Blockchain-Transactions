@@ -3,7 +3,7 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # INTRODUCTION
 
-The Celo blockchain is a decentralized platform that enables fast, secure, and low-cost payments and financial transactions using a native cryptocurrency called CELO. As with any blockchain, the Celo network generates a vast amount of data that can provide valuable insights into its operations, user behavior, and overall health. SQL is a powerful language that can be used to manage and analyze large datasets, making it an essential tool for those interested in exploring the Celo blockchain's transaction data. This topic, "Exploring the Core SQL Syntax for Analyzing Celo Blockchain Transactions," will provide an overview of the fundamental SQL syntax necessary for analyzing Celo blockchain transactions. It will cover basic SQL queries such as SELECT, WHERE, and GROUP BY, as well as more advanced functions like JOIN and subqueries. The insights gained from SQL analysis can be used to inform Celo blockchain development, improve user experience, and drive adoption.
+The Celo blockchain is a decentralized platform that enables fast, secure, and low-cost payments and financial transactions using a native cryptocurrency called CELO. As with any blockchain, the Celo network generates a vast amount of data that can provide valuable insights into its operations, user behavior, and overall health. SQL is a powerful language that can be used to manage and analyze large datasets, making it an essential tool for those interested in exploring the Celo blockchain's transaction data. This topic, "Exploring the Core SQL Syntax for Analyzing Celo Blockchain Transactions," will provide an overview of the fundamental SQL syntax necessary for analyzing Celo blockchain transactions. It will cover basic SQL queries such as `SELECT`, `WHERE`, and `GROUP BY`, as well as more advanced functions like `JOIN` and subqueries. The insights gained from SQL analysis can be used to inform Celo blockchain development, improve user experience, and drive adoption.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -32,20 +32,48 @@ The Celo blockchain is a decentralized platform that enables fast, secure, and l
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # OBJECTIVES
 
-The objective of "Exploring the Core SQL Syntax for Analyzing Celo Blockchain Transactions" is to provide a comprehensive understanding of SQL syntax necessary for analyzing Celo blockchain transactions. The topic aims to introduce the basics of SQL queries such as SELECT, WHERE, and GROUP BY, and to explore more advanced functions such as JOIN and subqueries. Through this exploration of SQL syntax, readers will gain the necessary skills to query and analyze Celo blockchain data effectively. The ultimate objective is to empower readers to use SQL as a tool for gaining valuable insights into the Celo blockchain's operations, user behavior, and overall health, leading to improvements in development, user experience, and adoption of the network.
+The objective of "Exploring the Core SQL Syntax for Analyzing Celo Blockchain Transactions" is to provide a comprehensive understanding of SQL syntax necessary for analyzing Celo blockchain transactions. The topic aims to introduce the basics of SQL queries such as `SELECT`, `WHERE`, and `GROUP BY`, and to explore more advanced functions such as `JOIN` and subqueries. Through this exploration of SQL syntax, readers will gain the necessary skills to query and analyze Celo blockchain data effectively. The ultimate objective is to empower readers to use SQL as a tool for gaining valuable insights into the Celo blockchain's operations, user behavior, and overall health, leading to improvements in development, user experience, and adoption of the network.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
 # PREREQUISITES
+
+Before diving into the core SQL syntax for analyzing Celo blockchain transactions, it is essential to have a fundamental understanding of SQL concepts and principles. Some basic SQL concepts include:
+
+- Database design and management
+- Tables, columns, and data types
+- Data manipulation using CRUD operations (CREATE, READ, UPDATE, DELETE)
+- Basic SQL queries such as `SELECT`, `FROM`, `WHERE`, and `GROUP BY`
+
+Familiarity with these concepts will make it easier to follow along with the tutorial and understand the SQL syntax used to analyze Celo blockchain transactions. Additionally, it is helpful to have a basic understanding of blockchain technology and the Celo blockchain specifically.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# GOALS
 
 * Understanding how to analyze CELO data with SQL.
 * Recognizing the fundamental operations utilized to create the CELO Data dashboard.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# REQUIREMENTS 
+# REQUIREMENTS
 
-* SQL EDITOR:SQL editors are essential tools for anyone working with relational databases and SQL queries. They provide a user-friendly interface for writing and executing SQL code, making it easier to manage and analyze data stored in a database
+### To follow this tutorial, you should have a basic understanding of the Celo blockchain and its transactions. You should also have access to a SQL server, such as MySQL, PostgreSQL, or SQL Server, and have a basic understanding of SQL syntax.
+
+The following software and tools will be used in this tutorial:
+
+ - A SQL server, such as MySQL, PostgreSQL, or SQL Server
+ - A command-line interface or GUI for interacting with the SQL server
+ - A text editor or SQL client for writing and executing SQL queries
+ - Basic knowledge of SQL syntax
+
+Optional:
+
+- Basic knowledge of command line interface
+- Basic knowledge of Python/ any programming language
+
+### It is not necessary to have prior experience with analyzing blockchain data or SQL, as this tutorial will provide an introduction to both. However, it is recommended to have some prior experience with SQL syntax and databases.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
