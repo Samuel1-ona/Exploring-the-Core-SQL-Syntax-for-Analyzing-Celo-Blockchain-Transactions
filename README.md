@@ -3,8 +3,7 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Introduction:
 
-The Celo blockchain is a decentralized platform that enables fast, secure and low-cost payments and financial transactions using a native cryptocurrency called as CELO. As with any blockchain, the Celo network generates a vast amount of data that can provide valuable insights into its operations, user behavior and overall health. SQL is a powerful language that can be used to manage and analyze large datasets, making it an essential tool for those interested in exploring the Celo blockchain's transaction data. This tutorial will provide an overview of the fundamental SQL syntax necessary for analyzing Celo blockchain transactions. It will also cover basic SQL queries such as SELECT, WHERE, GROUP BY as well as more advanced functions like JOIN and subqueries. The insights gained from SQL analysis can be used to inform Celo blockchain development, improve user experience and drive adoption.
-
+Celo blockchain enables fast, secure, and low-cost payments using Celo cryptocurrency. SQL is essential for analyzing its transaction data. This tutorial covers SQL basics and querying to gain insights for development, user experience, and adoption.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents:
@@ -33,8 +32,7 @@ The Celo blockchain is a decentralized platform that enables fast, secure and lo
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Objectives:
 
-The objective of this tutorial is to provide a comprehensive understanding of SQL syntax which is necessary for analyzing Celo blockchain transactions. The tutorial aims to introduce the basics of SQL queries such as SELECT, WHERE, and GROUP BY and to explore more advanced functions such as JOIN and subqueries. Through this, programmers will gain the necessary skills to query and analyze Celo blockchain data effectively. The ultimate objective is to empower programmers to use SQL as a tool for gaining valuable insights into the Celo blockchain's operations, user behavior and overall health leading to improvements in development, user experience and adoption of the network.
-
+This tutorial teaches programmers SQL syntax for analyzing Celo blockchain transactions. By mastering SQL queries, programmers can effectively query and analyze Celo blockchain data, gaining valuable skills for data analysis.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Pre-requisites:
