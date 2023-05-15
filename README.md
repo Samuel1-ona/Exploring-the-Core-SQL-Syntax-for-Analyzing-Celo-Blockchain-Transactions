@@ -21,13 +21,15 @@ SQL is essential for analyzing its transaction data. This tutorial covers SQL ba
    - [Explaining the use of SQL in Web3](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#explaining-the-use-of-sql-in-web3)
       - [Benefits of using SQL in CELO Blockchain](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#benefit-of-using-sql-in-celo-blockchain)
 
-* [Tutorial](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#tutorial)
+*  [Let's dive into a practical example to demonstrate how to extract information from a Celo transaction using SQL.](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#lets-dive-into-a-practical-example-to-demonstrate-how-to-extract-information-from-a-celo-transaction-using-sql)
 
      - [Creating a Database](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#creating-a-database)
        - [Importing the Flat Files ( CSV ) into SQL Server](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#importing-the-flat-files--csv--into-sql-server)
        - [Calling the table from the Database ](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#calling-the-table-from-the-database)
-       - [How to use all Aggregate Functions](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#how-to-use-all-aggregate-functions-and-date-functions-will-be-covered-in-the-tutorial)
-       - [How to use Time Functions](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#time-functions-used-in-querying-celo-blockchain)
+       - [Find transaction details for a specific transaction ID](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#find-transaction-details-for-a-specific-transaction-id)
+       - [Calculate the total amount transferred in the transaction](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#calculate-the-total-amount-transferred-in-the-transaction)
+       - [Determine the gas fee paid for the transaction](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#determine-the-gas-fee-paid-for-the-transaction)
+       - [Time functions used in Querying Celo Blockchain](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#time-functions-used-in-querying-celo-blockchain)
 
 * [Conclusion](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#conclusion)
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -69,7 +71,7 @@ SQL enables standardized querying of Celo blockchain data, facilitating insights
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Tutorial:
+# Let's dive into a practical example to demonstrate how to extract information from a Celo transaction using SQL:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Creating a Database:
 
@@ -131,11 +133,9 @@ In this syntax,```Celo_transactions``` is the name of the table you want to sele
 
 
 
-##  Let's dive into a practical example to demonstrate how to extract information from a Celo transaction using SQL.
 
 
-
-Let's say we have a Celo_transactions table with the following columns: transaction_id, sender_address, receiver_address, amount, gas_fee, and transaction_date. The goal is to analyze a specific transaction and extract relevant information.
+* # Let's say we have a Celo_transactions table with the following columns: transaction_id, sender_address, receiver_address, amount, gas_fee, and transaction_date. The goal is to analyze a specific transaction and extract relevant information.
 
 *  ## Find transaction details for a specific transaction ID:
 
