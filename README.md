@@ -3,7 +3,8 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Introduction:
 
-Celo blockchain enables fast, secure, and low-cost payments using Celo cryptocurrency. SQL is essential for analyzing its transaction data. This tutorial covers SQL basics and querying to gain insights for development, user experience, and adoption.
+Celo blockchain enables fast, secure, and low-cost payments using Celo cryptocurrency.
+SQL is essential for analyzing its transaction data. This tutorial covers SQL basics and querying to gain insights for development, user experience, and adoption.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents:
@@ -121,49 +122,50 @@ SET FOREIGN_KEY_CHECKS = 1;        -- This line re-enables foreign key checks af
 In this syntax,```Celo_transactions``` is the name of the table you want to select data from. The ```*``` symbol specifies that you want to select all columns from the table
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## How to use all Aggregate Functions:
+Let's dive into a practical example to demonstrate how to extract information from a Celo transaction using SQL.
 
-* The aggregate functions will be our first focus.
+Let's say we have a Celo_transactions table with the following columns: transaction_id, sender_address, receiver_address, amount, gas_fee, and transaction_date. The goal is to analyze a specific transaction and extract relevant information.
 
-Aggregate functions in SQL are functions that perform a calculation on a set of values and return a single value. 
+*  ## Find transaction details for a specific transaction ID:
 
-* ```COUNT()```: returns the number of rows that match a specified condition.
-* ```SUM()```: returns the sum of all values in a specified column.
-* ```AVG()```: returns the average of all values in a specified column.
-* ```MIN()```: returns the smallest value in a specified column.
-* ```MAX()```: returns the largest value in a specified column.
 
-* ## To find the total transactions:
 
 ``` 
--- This query calculates the total number of transactions stored in the Celo_transactions table.
+-- To extract details for a specific transaction, you can use the following SQL query:
 
+SELECT *  -- This statement selects all columns from the table.
 
-SELECT SUM(txns) AS "Total_Transactions" -- This calculates the sum of the txns column of all transactions and gives the result a column alias "Total_Transactions".
+FROM Celo_transactions  -- Specifies the table from which to retrieve the data 
 
-FROM Celo_transactions; -- This specifies the Celo_transactions table as the source of data for the query.
-
-```
-
-* ## To find the average block time:
-
-```
--- This query calculates the average block time of all transactions stored in the Celo_transactions table.
-
-SELECT AVG(age) AS "Avg_block_time" -- This calculates the average block time of all transactions and gives the result a column alias "Avg_block_time".
-
-FROM Celo_transactions; -- This specifies the Celo_transactions table as the source of data for the query.
+WHERE transaction_id = 'your_transaction_id'; -- This condition filters the rows based on the transaction_id column.
 
 ```
 
-* ## To find the average gas fee:
+* ## Calculate the total amount transferred in the transaction:
 
 ```
--- This query calculates the average gas fee of all transactions stored in the Celo_transactions table.
+-- To calculate the total amount transferred in a transaction, you can use the following query:
 
-SELECT AVG(gas_fee) AS "Avg_gas_fee" -- This calculates the average gas fee of all transactions and gives the result a column alias "Avg_gas_fee".
+SELECT SUM(amount) AS total_amount -- This statement calculates the sum of the amount column for the selected transaction and assigns it an alias of total_amount. 
 
-FROM Celo_transactions; -- This specifies the Celo_transactions table as the source of data for the query.
+FROM Celo_transactions              -- Specifies the table from which to retrieve the data 
+
+WHERE transaction_id = 'your_transaction_id';   -- This condition filters the rows based on the transaction_id column.
+
+
+```
+
+* ## Determine the gas fee paid for the transaction:
+
+```
+-- To find the gas fee paid for a specific transaction, you can use the following query:
+
+SELECT gas_fee   -- This statement specifies the column gas_fee that you want to retrieve from the table. It indicates that you are interested in obtaining the gas fee associated with the transaction.
+
+FROM Celo_transactions  --   Specifies the table from which to retrieve the data 
+
+WHERE transaction_id = 'your_transaction_id'; -- This condition filters the rows based on the transaction_id column.
+
 
 ```
 
@@ -171,30 +173,24 @@ FROM Celo_transactions; -- This specifies the Celo_transactions table as the sou
 
 ## Time functions used in Querying Celo Blockchain:
 
-* Time functions in SQL are used to work with temporal data such as dates and times. These functions provide a way to extract or manipulate specific parts of a date or time value, perform calculations on dates and times, and format date and time values for display.
+* Analyze transactions within a specific date range:
 
-```NOW()```: returns the current date and time.
-```DATE()```: extracts the date part of a date/time value.
-```TIME()```: extracts the time part of a date/time value.
-```YEAR(),``` MONTH(), DAY(): extract the year, month, or day from a date value.
-```HOUR(),``` MINUTE(), SECOND(): extract the hour, minute, or second from a time value.
-```DATEDIFF()```: calculates the difference between two dates or times.
 
-* ## To find the days of  Carbon Nagative Celo blockchain:
 
-* Assuming you have a table named Celo_transactions with columns ***id***, ***date***, and ***carbon_negative***, where date stores the transaction date and carbon_negative stores a boolean value indicating whether the transaction is carbon negative, you can use the following SQL query to calculate the number of days between the current date and the transaction date, and include the carbon_negative column:
 
 ```
--- This query selects the id, the number of days since the date of the transaction, and the carbon negative value 
--- from the Celo_transactions table.
+To analyze transactions within a specific date range, you can use the following query:
 
-SELECT id, 
-       DATEDIFF(NOW(), date) AS Days_carbon_negative, -- This calculates the number of days between the transaction date and today's date.
-       
-       carbon_negative -- This selects the carbon negative value from the Celo_transactions table.
-FROM Celo_transactions;
+SELECT *   -- This statement selects all columns from the table.
+
+FROM Celo_transactions -- Specifies the table from which to retrieve the data 
+
+WHERE transaction_date >= 'start_date' AND transaction_date <= 'end_date';  -- This condition filters the rows based on the transaction_date column. It selects only the rows where the transaction date is greater than or equal to the specified start date and less than or equal to the specified end date.
+
 
 ```
+
+These examples demonstrate how you can extract specific information from Celo transactions using SQL queries. By modifying the queries based on your analysis requirements, you can gain insights into transaction data, such as specific transaction details, total amounts transferred, gas fees, and analyzing transactions within a specific date range.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## CONCLUSION:
 
