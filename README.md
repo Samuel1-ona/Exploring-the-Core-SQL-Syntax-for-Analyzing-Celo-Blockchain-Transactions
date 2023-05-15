@@ -119,10 +119,19 @@ SET FOREIGN_KEY_CHECKS = 1;        -- This line re-enables foreign key checks af
 
 ```SELECT * FROM Celo_transactions;```
 
+
+
 In this syntax,```Celo_transactions``` is the name of the table you want to select data from. The ```*``` symbol specifies that you want to select all columns from the table
+
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+
 ##  Let's dive into a practical example to demonstrate how to extract information from a Celo transaction using SQL.
+
+
 
 Let's say we have a Celo_transactions table with the following columns: transaction_id, sender_address, receiver_address, amount, gas_fee, and transaction_date. The goal is to analyze a specific transaction and extract relevant information.
 
@@ -190,7 +199,11 @@ WHERE transaction_date >= 'start_date' AND transaction_date <= 'end_date';  -- T
 
 ```
 
+
+
 These examples demonstrate how you can extract specific information from Celo transactions using SQL queries. By modifying the queries based on your analysis requirements, you can gain insights into transaction data, such as specific transaction details, total amounts transferred, gas fees, and analyzing transactions within a specific date range.
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## CONCLUSION:
 
