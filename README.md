@@ -135,7 +135,7 @@ In this syntax,```Celo_transactions``` is the name of the table you want to sele
 
 
 
-* # Let's say we have a Celo_transactions table with the following columns: transaction_id, sender_address, receiver_address, amount, gas_fee, and transaction_date. The goal is to analyze a specific transaction and extract relevant information.
+* ## Let's say we have a Celo_transactions table with the following columns: transaction_id, sender_address, receiver_address, amount, gas_fee, and transaction_date. The goal is to analyze a specific transaction and extract relevant information.
 
 *  ## Find transaction details for a specific transaction ID:
 
