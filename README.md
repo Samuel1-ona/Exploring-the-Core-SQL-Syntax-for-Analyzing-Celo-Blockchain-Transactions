@@ -122,7 +122,7 @@ SET FOREIGN_KEY_CHECKS = 1;        -- This line re-enables foreign key checks af
 In this syntax,```Celo_transactions``` is the name of the table you want to select data from. The ```*``` symbol specifies that you want to select all columns from the table
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Let's dive into a practical example to demonstrate how to extract information from a Celo transaction using SQL.
+##  Let's dive into a practical example to demonstrate how to extract information from a Celo transaction using SQL.
 
 Let's say we have a Celo_transactions table with the following columns: transaction_id, sender_address, receiver_address, amount, gas_fee, and transaction_date. The goal is to analyze a specific transaction and extract relevant information.
 
