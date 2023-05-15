@@ -34,6 +34,8 @@ SQL is essential for analyzing its transaction data. This tutorial covers SQL ba
 ## Objectives:
 
 This tutorial teaches programmers SQL syntax for analyzing Celo blockchain transactions. By mastering SQL queries, programmers can effectively query and analyze Celo blockchain data, gaining valuable skills for data analysis.
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Pre-requisites:
