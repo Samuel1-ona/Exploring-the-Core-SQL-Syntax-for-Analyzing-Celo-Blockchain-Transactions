@@ -135,7 +135,7 @@ In this syntax,```Celo_transactions``` is the name of the table you want to sele
 
 
 
-* ## Let's say we have a Celo_transactions table with the following columns: transaction_id, sender_address, receiver_address, amount, gas_fee, and transaction_date. The goal is to analyze a specific transaction and extract relevant information.
+* ## Let's say we have a Celo_transactions table with the following columns: ```transaction_id```, ```sender_address```, ```receiver_address```, ```amount```, ```gas_fee```, and ```transaction_date```. The goal is to analyze a specific transaction and extract relevant information.
 
 *  ## Find transaction details for a specific transaction ID:
 
@@ -155,7 +155,7 @@ WHERE transaction_id = 'your_transaction_id'; -- This condition filters the rows
 * ## Calculate the total amount transferred in the transaction:
 
 ```
--- To calculate the total amount transferred in a transaction, you can use the following query:
+-- To calculate the total ```amount``` transferred in a transaction, you can use the following query:
 
 SELECT SUM(amount) AS total_amount -- This statement calculates the sum of the amount column for the selected transaction and assigns it an alias of total_amount. 
 
@@ -166,10 +166,10 @@ WHERE transaction_id = 'your_transaction_id';   -- This condition filters the ro
 
 ```
 
-* ## Determine the gas fee paid for the transaction:
+* ## Determine the ```gas_fee``` paid for the transaction:
 
 ```
--- To find the gas fee paid for a specific transaction, you can use the following query:
+-- To find the ```gas_fee``` paid for a specific transaction, you can use the following query:
 
 SELECT gas_fee   -- This statement specifies the column gas_fee that you want to retrieve from the table. It indicates that you are interested in obtaining the gas fee associated with the transaction.
 
