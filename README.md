@@ -221,7 +221,6 @@ These examples demonstrate how you can extract specific information from Celo tr
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## CONCLUSION:
 
-SQL is a crucial tool for analyzing Celo blockchain transactions. By understanding SQL syntax and employing querying techniques, developers can effectively extract information from Celo transactions, gaining valuable insights for development, user experience, and adoption decisions.
-
+Hence, SQL is a powerful tool for analyzing Celo blockchain transactions. With the vast amount of transaction data generated on the blockchain, SQL provides a flexible and efficient way to extract and manipulate the data. By understanding the core syntax of SQL and its functions, users can query the blockchain database to extract meaningful insights such as transaction volume, block time, gas prices, and carbon footprint. These insights can help inform decisions related to blockchain development, adoption and sustainability. As the Celo blockchain continues to grow and evolve, the ability to analyze and make sense of the transaction data becomes increasingly important. By mastering the core SQL syntax for analyzing Celo blockchain transactions, users can stay ahead of the curve and unlock the full potential of the blockchain.
 
 
