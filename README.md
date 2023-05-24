@@ -3,9 +3,7 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Introduction:
 
-Celo blockchain enables fast, secure, and low-cost payments using Celo cryptocurrency.
-SQL is essential for analyzing its transaction data. This tutorial covers SQL basics and querying to gain insights for development, user experience, and adoption.
-
+The Celo blockchain is a decentralized platform that enables fast, secure, and low-cost payments and financial transactions using a native cryptocurrency called Celo. As with any blockchain, the Celo network generates a vast amount of data that can provide valuable insights into its operations, user behavior, and overall health. SQL is a powerful language that can be used to manage and analyze large datasets, making it an essential tool for those interested in exploring the Celo blockchain's transaction data. This tutorial will provide an overview of the fundamental SQL syntax necessary for analyzing Celo blockchain transactions. It will also cover basic SQL queries. The insights gained from SQL analysis can be used to inform Celo blockchain development, improve the user experience, and drive adoption.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents:
 
@@ -35,7 +33,7 @@ SQL is essential for analyzing its transaction data. This tutorial covers SQL ba
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Objectives:
 
-This tutorial teaches programmers SQL syntax for analyzing Celo blockchain transactions. By mastering SQL queries, programmers can effectively query and analyze Celo blockchain data, gaining valuable skills for data analysis.
+The objective of this tutorial is to provide a comprehensive understanding of SQL syntax, which is necessary for analyzing Celo blockchain transactions. The tutorial aims to introduce the basics of SQL queries Through this, programmers will gain the necessary skills to query and analyze Celo blockchain data effectively. The ultimate objective is to empower programmers to use SQL as a tool for gaining valuable insights into the Celo blockchain's operations, user behavior, and overall health, leading to improvements in development, user experience, and adoption of the network.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -67,7 +65,17 @@ This tutorial teaches programmers SQL syntax for analyzing Celo blockchain trans
 
 ## Benefits of using SQL in CELO Blockchain:
 
-SQL enables standardized querying of Celo blockchain data, facilitating insights for performance improvements. Optimized for fast analysis, it integrates with tools, promotes collaboration, and offers transferable skills, enhancing data management and fostering a robust ecosystem. 
+1.Querying blockchain data: SQL provides a standardized way of querying data stored in the Celo blockchain, allowing developers and analysts to retrieve specific information quickly and efficiently. This can help identify patterns and insights that can be used to improve the network's performance.
+
+2.Faster analysis: SQL queries can be optimized for performance by allowing faster analysis of large datasets. This can be particularly useful for analyzing transaction data and identifying performance bottlenecks or potential security issues.
+
+3.Integration with other tools: SQL is widely used in the tech industry and many tools & platforms are built around it. Using SQL in Celo blockchain makes it easier to integrate it with other systems and tools which allows developers to leverage existing infrastructure and tools to build more robust applications.
+
+4.Standardization: Using SQL in Celo blockchain provides a standardized way of interacting with the blockchain data, making it easier for developers and analysts to collaborate and share their work.
+
+5.Transferable skills: Learning SQL is a valuable skill that can be applied to other relational databases and technologies. This means that developers and analysts who learn SQL in the context of Celo blockchain can apply their skills to other projects and industries, making it a valuable skill to have in today's job market.
+
+Overall, using SQL in Celo blockchain can help developers and analysts to efficiently, effectively manage and analyze the network's data, leading to better performance and a more robust blockchain ecosystem.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
