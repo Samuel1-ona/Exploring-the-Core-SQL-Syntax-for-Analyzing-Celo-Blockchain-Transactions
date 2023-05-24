@@ -151,7 +151,9 @@ In this syntax,```Celo_transactions``` is the name of the table you want to sele
 
 *  ## Find transaction details for a specific transaction ID:
 
+The purpose of this query is to extract the details of a specific transaction identified by its unique transaction ID. By executing this query, you will obtain all the information available for that particular transaction, including the sender address, receiver address, amount transferred, gas fee, and transaction date.
 
+Note that when using this query, ensure to replace 'your_transaction_id' with the actual transaction ID value you want to analyze to get the desired results.
 
 ``` 
 -- To extract details for a specific transaction, you can use the following SQL query:
@@ -166,6 +168,11 @@ WHERE transaction_id = 'your_transaction_id'; -- This condition filters the rows
 
 * ## Calculate the total amount transferred in the transaction:
 
+By executing this query and replacing 'your_transaction_id' with the actual transaction ID you want to analyze, you will get the total amount associated with that transaction. This can be useful in determining the overall value transferred in a particular transaction.
+
+It's important to note that the SUM() function is used here assuming that the amount column contains numerical values representing the transaction amounts. Adjust the query accordingly if the column data type or the purpose of the amount column is different in your specific scenario. 
+
+
 ```
 -- To calculate the total amount transferred in a transaction, you can use the following query:
 
@@ -179,6 +186,11 @@ WHERE transaction_id = 'your_transaction_id';   -- This condition filters the ro
 ```
 
 * ## Determine the ```gas_fee``` paid for the transaction:
+
+By executing this query and replacing 'your_transaction_id' with the actual transaction ID you want to analyze, you will obtain the gas fee associated with that transaction. Gas fees are the charges paid by users to execute transactions on the Celo blockchain and are typically denoted in the blockchain's native currency.
+
+Please note that the column name gas_fee assumes that the Celo_transactions table contains a column named gas_fee that stores the gas fee values for each transaction. Adjust the query if the column name or structure is different in your specific scenario.
+
 
 ```
 -- To find the gas_fee paid for a specific transaction, you can use the following query:
@@ -198,7 +210,11 @@ WHERE transaction_id = 'your_transaction_id'; -- This condition filters the rows
 
 * Analyze transactions within a specific date range:
 
+To use this query effectively, replace 'start_date' and 'end_date' with the actual dates you want to use as the range for filtering the transactions. Make sure to follow the correct date format expected by the database system.
 
+By executing this query with the appropriate start and end dates, you will obtain all the transactions that occurred within the specified date range from the Celo_transactions table. This can be useful for analyzing transactions over a specific period or extracting data for a particular time frame.
+
+Note that the * symbol in the SELECT statement selects all columns. If you only need specific columns, you can replace * with the desired column names separated by commas.
 
 
 ```
