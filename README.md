@@ -184,6 +184,43 @@ WHERE transaction_id = 'your_transaction_id';   -- This condition filters the ro
 
 
 ```
+* ## Calculate the maximum amount transferred in the transaction:
+
+Now, let's focus on the``` MAX()``` function:
+
+The ```MAX()``` function is an aggregate function in SQL that returns the maximum value from a given column. It is used to perform calculations on a set of values and return a single value. In this code, the MAX() function is applied to the "amount" column, and it retrieves the highest value among all the values in that column. By using the MAX() function, we can easily find the maximum amount associated with the specified transaction ID.
+
+```
+-- To calculate the maximum amount transferred in a transaction, you can use the following query:
+
+SELECT MAX(amount) AS maximum_amount -- This statement calculates the maximum of the amount column for the selected transaction and assigns it an alias of maximum_amount. 
+
+FROM Celo_transactions              -- Specifies the table from which to retrieve the data 
+
+WHERE transaction_id = 'your_transaction_id';   -- This condition filters the rows based on the transaction_id column.
+
+
+```
+
+* ## Calculate the maximum amount transferred in the transaction:
+
+
+Now, let's focus on the MIN() function:
+
+The MIN() function is an aggregate function in SQL that returns the minimum value from a given column. It is used to calculate and retrieve the smallest value among a set of values. In this code, the MIN() function is applied to the "amount" column, and it retrieves the lowest value among all the values in that column. By using the MIN() function, we can easily find the minimum amount associated with the specified transaction ID.
+
+```
+-- To calculate the minimum amount transferred in a transaction, you can use the following query:
+
+SELECT MIN(amount) AS Minimum_amount -- This statement calculates the Minimum of the amount column for the selected transaction and assigns it an alias of maximum_amount. 
+
+FROM Celo_transactions              -- Specifies the table from which to retrieve the data 
+
+WHERE transaction_id = 'your_transaction_id';   -- This condition filters the rows based on the transaction_id column.
+
+
+```
+
 
 * ## Determine the ```gas_fee``` paid for the transaction:
 
