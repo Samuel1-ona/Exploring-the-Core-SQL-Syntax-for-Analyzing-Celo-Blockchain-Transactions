@@ -28,6 +28,7 @@ The Celo blockchain is a decentralized platform that enables fast, secure, and l
        - [Calling the table from the Database ](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#calling-the-table-from-the-database)
        - [Find transaction details for a specific transaction ID](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#find-transaction-details-for-a-specific-transaction-id)
        - [Calculate the total amount transferred in the transaction](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#calculate-the-total-amount-transferred-in-the-transaction)
+       - [Calculate the maximum amount transferred in the transaction](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions#calculate-the-maximum-amount-transferred-in-the-transaction)
        - [Determine the gas fee paid for the transaction](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#determine-the-gas-fee-paid-for-the-transaction)
        - [Time functions used in Querying Celo Blockchain](https://github.com/Samuel1-ona/Exploring-the-Core-SQL-Syntax-for-Analyzing-Celo-Blockchain-Transactions/blob/main/README.md#time-functions-used-in-querying-celo-blockchain)
 
@@ -202,12 +203,12 @@ WHERE transaction_id = 'your_transaction_id';   -- This condition filters the ro
 
 ```
 
-* ## Calculate the maximum amount transferred in the transaction:
+* ## Calculate the minimum amount transferred in the transaction:
 
 
 Now, let's focus on the MIN() function:
 
-The MIN() function is an aggregate function in SQL that returns the minimum value from a given column. It is used to calculate and retrieve the smallest value among a set of values. In this code, the MIN() function is applied to the "amount" column, and it retrieves the lowest value among all the values in that column. By using the MIN() function, we can easily find the minimum amount associated with the specified transaction ID.
+The ```MIN()``` function is an aggregate function in SQL that returns the minimum value from a given column. It is used to calculate and retrieve the smallest value among a set of values. In this code, the MIN() function is applied to the "amount" column, and it retrieves the lowest value among all the values in that column. By using the MIN() function, we can easily find the minimum amount associated with the specified transaction ID.
 
 ```
 -- To calculate the minimum amount transferred in a transaction, you can use the following query:
